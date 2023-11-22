@@ -16,4 +16,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #1976d2;
+  border-radius: 10px;
+  padding: 50px 30px;
+  &__item {
+  }
+
+  &__row {
+    display: flex;
+    gap: 15px 8px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
 }
